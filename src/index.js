@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import Navbar1 from './Navbar1';
+import Botonera from './Botonera';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  //renderizo los componentes Navbar, Botonera y App
+  <body>
+    <header>
+      <Navbar1/>
+    </header>
+    <main>
+      <Botonera/>
+      <App/>
+    </main>
+  </body>
+  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
